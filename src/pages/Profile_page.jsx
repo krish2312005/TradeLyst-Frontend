@@ -4,7 +4,7 @@ import Feed from "../components/Feed";
 import Post from "../components/Post";
 import RightSide from "../components/RightSide";
 import Ticker from "../components/Ticker";
-import Profile from '../components/Profile';
+import Profile from '../components/Profile.jsx';
 import Profile_feed from '../components/Profile_feed';
 
 const Profile_page = () => {
