@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Msg_card from "./msg_card";
+import Msg_card from "./Msg_card";
 import { useAuth0 } from "@auth0/auth0-react";
 
 const Profile_feed = () => {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Msg_card from "./msg_card";
+import Msg_card from "./Msg_card";
 
 const Feed = () => {
   const [messages, setMessages] = useState([]);

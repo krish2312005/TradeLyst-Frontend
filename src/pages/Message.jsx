@@ -6,7 +6,7 @@ import Post from "../components/Post";
 import Comment from "../components/Comment";
 import RightSide from "../components/RightSide";
 import Ticker from "../components/Ticker";
-import Msg_card from '../components/msg_card';
+import Msg_card from '../components/Msg_card';
 import { useLocation } from "react-router-dom";
 
 const Message = () => {
