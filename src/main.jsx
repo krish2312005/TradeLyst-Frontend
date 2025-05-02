@@ -13,7 +13,8 @@ createRoot(document.getElementById('root')).render(
       domain="dev-a1l352vn33wp4qdc.us.auth0.com"
       clientId="bZYIACXRrymLCPuABOmRh2ga38fmrcGy"
       authorizationParams={{
-        redirect_uri: window.location.origin
+        //redirect_uri: window.location.origin
+        redirect_uri:'https://trade-lyst-frontend-krish2312005s-projects.vercel.app/'
       }}
     >
 
