@@ -33,12 +33,12 @@ const ProtectedRoute = ({ children }) => {
 
         try {
           // Check if the user already exists in the database
-          const response = await axios.get(`http://localhost:3000/api/getUser/${user.sub}`);
+          const response = await axios.get(`https://tradelyst-backend.onrender.com/api/getUser/${user.sub}`);
           if (response.data.exists) {
             console.log("User already exists in the database");
           } else {
             // If the user doesn't exist, create a new user
-            await axios.post('http://localhost:3000/api/PostUser', userData);
+            await axios.post('https://tradelyst-backend.onrender.com/api/PostUser', userData);
             console.log("User data saved successfully");
           }
         } catch (error) {

@@ -12,7 +12,7 @@ const Profile = () => {
       if (user) {
         try {
           const response = await fetch(
-            `http://localhost:3000/api/getUser/${user.sub}`
+            `https://tradelyst-backend.onrender.com/api/getUser/${user.sub}`
           );
           //console.log("The User Id is : " , user.sub);
           const data = await response.json();
@@ -32,7 +32,7 @@ const Profile = () => {
     const updatedAbout = e.target.about.value; // Get the updated "about" value from the form
 
     try {
-      const response = await fetch(`http://localhost:3000/api/updateUser/${user.sub}`, {
+      const response = await fetch(`https://tradelyst-backend.onrender.com/api/updateUser/${user.sub}`, {
         method: "PUT", // Use PUT for updating resources
         headers: {
           "Content-Type": "application/json",

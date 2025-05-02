@@ -9,12 +9,12 @@ const CommentFeed = ({ messageId }) => {
         const fetchComments = async () => {
             try {
                 const endpoint = messageId
-                    ? `http://localhost:3000/api/getComments/${messageId}` // Fetch comments by messageId
-                    : `http://localhost:3000/api/getComment`; // Fetch all comments
+                    ? `https://tradelyst-backend.onrender.com/api/getComments/${messageId}` // Fetch comments by messageId
+                    : `https://tradelyst-backend.onrender.com/api/getComment`; // Fetch all comments
 
                 const [commentsResponse, usersResponse] = await Promise.all([
                     fetch(endpoint),
-                    fetch("http://localhost:3000/api/getUser"), // Fetch all users
+                    fetch("https://tradelyst-backend.onrender.com/api/getUser"), // Fetch all users
                 ]);
 
                 if (commentsResponse.ok && usersResponse.ok) {

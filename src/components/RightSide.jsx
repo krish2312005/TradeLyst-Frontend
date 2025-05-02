@@ -10,7 +10,7 @@ const RightSide = () => {
   useEffect(() => {
     const fetchTopics = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/getMessages'); // Adjust the endpoint as per your backend
+        const response = await axios.get('https://tradelyst-backend.onrender.com/api/getMessages'); // Adjust the endpoint as per your backend
         const messages = response.data.messages; // Extract the messages array
 
         // Count occurrences of each topic (case-insensitive)

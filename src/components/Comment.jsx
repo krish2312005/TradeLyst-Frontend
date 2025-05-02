@@ -34,7 +34,7 @@ const Comment = ({ messageId }) => {
         }
 
         try {
-            const response = await fetch("http://localhost:3000/api/PostComment", {
+            const response = await fetch("https://tradelyst-backend.onrender.com/api/PostComment", {
                 method: "POST",
                 body: formData,
             });

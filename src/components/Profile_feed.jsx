@@ -11,8 +11,8 @@ const Profile_feed = () => {
         const fetchUserMessages = async () => {
             try {
                 const [messagesResponse, usersResponse] = await Promise.all([
-                    fetch(`http://localhost:3000/api/getMessages?userId=${user.sub}`), // Fetch messages
-                    fetch("http://localhost:3000/api/getUser"), // Fetch all users
+                    fetch(`https://tradelyst-backend.onrender.com/api/getMessages?userId=${user.sub}`), // Fetch messages
+                    fetch("https://tradelyst-backend.onrender.com/api/getUser"), // Fetch all users
                 ]);
 
                 if (messagesResponse.ok && usersResponse.ok) {

@@ -22,7 +22,7 @@ const Comment_card = ({ senderName, senderProfilePicture, text, likes, picture, 
         if (isLiked) return; // Prevent multiple clicks
 
         try {
-            const response = await fetch(`http://localhost:3000/api/updateComment/${commentId}`, {
+            const response = await fetch(`https://tradelyst-backend.onrender.com/api/updateComment/${commentId}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",

@@ -8,8 +8,8 @@ const Feed = () => {
     const fetchData = async () => {
       try {
         const [messagesRes, usersRes] = await Promise.all([
-          fetch("http://localhost:3000/api/getMessages"),
-          fetch("http://localhost:3000/api/getUser"),
+          fetch("https://tradelyst-backend.onrender.com/api/getMessages"),
+          fetch("https://tradelyst-backend.onrender.com/api/getUser"),
         ]);
 
         const messagesJson = await messagesRes.json();
@@ -37,7 +37,7 @@ const Feed = () => {
             ...message,
             senderName: user.name || "Unknown User", // Use the name from the map
             senderProfilePicture: user.picture || "/defaultProfile.png", // Use the picture from the map
-            picture: message.picture?.map((pic) => `http://localhost:3000/${pic}`) || [],
+            picture: message.picture?.map((pic) => `https://tradelyst-backend.onrender.com/${pic}`) || [],
           };
         });
 

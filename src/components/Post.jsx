@@ -32,7 +32,7 @@ const Post = () => {
         try {
             // Send the form data to your backend API
             const response = await axios.post(
-                "http://localhost:3000/api/PostMessage", // Replace with your backend endpoint
+                "https://tradelyst-backend.onrender.com/api/PostMessage", // Replace with your backend endpoint
                 formData,
                 {
                     headers: {

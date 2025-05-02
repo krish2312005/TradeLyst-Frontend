@@ -38,7 +38,7 @@ const Msg_card = ({ senderName, senderProfilePicture, text, topic, likes, commen
         if (isLiked) return; // Prevent multiple clicks
 
         try {
-            const response = await fetch(`http://localhost:3000/api/updateMessage/${messageId}`, {
+            const response = await fetch(`https://tradelyst-backend.onrender.com/api/updateMessage/${messageId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
