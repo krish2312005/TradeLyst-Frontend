@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import profileImage from "../assets/profile.jpg";
 import { useAuth0 } from "@auth0/auth0-react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
