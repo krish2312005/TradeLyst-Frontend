@@ -90,17 +90,13 @@ const Msg_card = ({ senderName, senderProfilePicture, text, topic, likes, commen
             <div className="card-header">
                 <div className="row">
                     <div className="col d-flex flex-row align-items-center gap-3" style={{ cursor: "pointer" }}>
-                        <Link to="/profile" style={linkStyle}>
-                            <img
-                                src={senderProfilePicture || "/defaultProfile.png"} // default profile fallback
-                                className="img-thumbnail rounded-circle p-0 border-0"
-                                style={{ height: "50px", width: "50px" }}
-                                alt="Profile"
-                            />
-                        </Link>
-                        <Link to="/profile" style={linkStyle}>
-                            <h2 style={{ margin: "0px", fontSize: "20px" }}>{senderName}</h2>
-                        </Link>
+                        <img
+                            src={senderProfilePicture || "/defaultProfile.png"} // default profile fallback
+                            className="img-thumbnail rounded-circle p-0 border-0"
+                            style={{ height: "50px", width: "50px" }}
+                            alt="Profile"
+                        />
+                        <h2 style={{ margin: "0px", fontSize: "20px" }}>{senderName}</h2>
 
                         {!disableActions && (
                             <>
@@ -146,7 +142,7 @@ const Msg_card = ({ senderName, senderProfilePicture, text, topic, likes, commen
                                 style={{ maxHeight: "200px", width: "300px", objectFit: "cover", cursor: "pointer" }}
                                 onClick={() => openFullScreen(picUrl)} // Open image in full screen when clicked
                             />
-                            
+
                         ))}
                     </div>
                 )}
