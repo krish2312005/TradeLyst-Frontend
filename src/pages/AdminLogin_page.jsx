@@ -7,7 +7,7 @@ const AdminLoginPage = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    console.log('Admin logged in with:', { email, password });
+    //console.log('Admin logged in with:', { email, password });
   };
 
   return (

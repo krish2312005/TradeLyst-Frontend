@@ -42,7 +42,7 @@ const Post = () => {
             );
             // Show success toast
             toast.success("Post submitted successfully!");
-            console.log("Post submitted successfully:", response.data);
+            //console.log("Post submitted successfully:", response.data);
 
             // Clear the form fields
             setTweetText("");

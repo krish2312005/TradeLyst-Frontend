@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import './Msg_card.css';
 
 const Msg_card = ({ senderName, senderProfilePicture, text, topic, likes, comments, picture, messageId, disableActions = false }) => {
-    console.log("Message ID:", messageId); // Debugging: Check if messageId is passed correctly
+    //console.log("Message ID:", messageId); // Debugging: Check if messageId is passed correctly
     const [isFullScreen, setIsFullScreen] = useState(false); // State for full-screen mode
     const [selectedImage, setSelectedImage] = useState(null); // State to store selected image for full-screen view
     const [currentLikes, setCurrentLikes] = useState(likes); // Local state for likes

@@ -29,17 +29,17 @@ const ProtectedRoute = ({ children }) => {
           picture: user.picture || "",
         };
 
-        console.log("Sending user data to backend:", userData);
+        //console.log("Sending user data to backend:", userData);
 
         try {
           // Check if the user already exists in the database
           const response = await axios.get(`https://tradelyst-backend.onrender.com/api/getUser/${user.sub}`);
           if (response.data.exists) {
-            console.log("User already exists in the database");
+            //console.log("User already exists in the database");
           } else {
             // If the user doesn't exist, create a new user
             await axios.post('https://tradelyst-backend.onrender.com/api/PostUser', userData);
-            console.log("User data saved successfully");
+            //console.log("User data saved successfully");
           }
         } catch (error) {
           console.error("Error checking or saving user data:", error.response ? error.response.data : error.message);

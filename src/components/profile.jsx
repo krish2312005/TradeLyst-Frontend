@@ -14,7 +14,7 @@ const Profile = () => {
           const response = await fetch(
             `https://tradelyst-backend.onrender.com/api/getUser/${user.sub}`
           );
-          //console.log("The User Id is : " , user.sub);
+          ////console.log("The User Id is : " , user.sub);
           const data = await response.json();
           setUserData(data);
 
@@ -42,7 +42,7 @@ const Profile = () => {
 
       if (response.ok) {
         const updatedData = await response.json();
-        //console.log("Updated user data:", updatedData);
+        ////console.log("Updated user data:", updatedData);
         setUserData((prevData) => ({
           ...prevData,
           user: {
