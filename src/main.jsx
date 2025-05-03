@@ -5,6 +5,7 @@ import App from './App.jsx'
 import Message from './pages/Message.jsx'
 import Profile_page from './pages/Profile_page.jsx'
 import { Auth0Provider } from '@auth0/auth0-react';
+import { Analytics } from "@vercel/analytics/react"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -21,6 +22,8 @@ createRoot(document.getElementById('root')).render(
       <App />
 
     </Auth0Provider>,
+
+    <Analytics/>
 
 
     {/*
